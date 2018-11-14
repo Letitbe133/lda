@@ -16,7 +16,7 @@ body {
     background-image: url("img/beton-fond.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     box-sizing: border-box;
 }
 a, a:active, a:visited {
