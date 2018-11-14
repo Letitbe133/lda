@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -33,20 +33,21 @@ header, .contact {
     justify-content: center;
     align-items: center;
 }
-header p, .socials p, .contact p {
+header h1, .socials p, .contact p {
     padding: 0 1rem;
 }
 header img {
     width: 250px;
     margin-bottom: 2rem;
+    padding-top:10vh;
 }
-header p {
+header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 1.3rem;
 }
-.socials a:first-child img {
-    margin-right: 8px;
+#fb {
+    margin-right: 4px;
 }
 
 @media only screen 
@@ -59,7 +60,7 @@ header p {
     header {
         margin-bottom: 4rem;
     }
-    header p {
+    header h1 {
         font-size: 1.5rem;
     }
 }
@@ -69,7 +70,7 @@ header p {
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
     body {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     header {
         margin-bottom: 6rem;
@@ -77,19 +78,19 @@ header p {
     header img {
         width: 300px;
     }
-    header p {
-        font-size: 2rem;
+    header h1 {
+        font-size: 1.8rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     body {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     header img {
         width: 300px;
     }
-    header p {
-        font-size: 2rem;
+    header h1 {
+        font-size: 1.8rem;
     } 
 }
