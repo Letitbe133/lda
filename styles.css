@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #3d3d3d;
+    text-align: center;
+    width: 100%;
+    background-image: url("img/beton-fond.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    box-sizing: border-box;
+}
+a, a:active, a:visited {
+    text-decoration: none;
+    color: #3d3d3d;
+    transition: color 0.4s ease;
+}
+a:hover {
+    color: hsl(0, 0%, 35%);
+}
+header, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header p, .socials p, .contact p {
+    padding: 0 1rem;
+}
+header img {
+    width: 250px;
+    margin-bottom: 2rem;
+}
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+.socials a:first-child img {
+    margin-right: 8px;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        font-size: 1.2rem;
+    }
+    header {
+        margin-bottom: 4rem;
+    }
+    header p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        font-size: 1.5rem;
+    }
+    header {
+        margin-bottom: 6rem;
+    }
+    header img {
+        width: 300px;
+    }
+    header p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.5rem;
+    }
+    header img {
+        width: 300px;
+    }
+    header p {
+        font-size: 2rem;
+    } 
+}
